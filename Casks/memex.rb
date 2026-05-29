@@ -2,8 +2,7 @@ cask "memex" do
   version "0.1.2"
   sha256 "d6d69df15005d963ad9e1831768d1899e456f52b0cf23e21e576cfb58d66f57d"
 
-  url "https://github.com/Two-Weeks-Team/memex/releases/download/v#{version}/Memex_#{version}_aarch64.dmg",
-      verified: "github.com/Two-Weeks-Team/memex/"
+  url "https://github.com/Two-Weeks-Team/memex/releases/download/v#{version}/Memex_#{version}_aarch64.dmg"
   name "Memex"
   desc "Desktop browser for AI session JSONL transcripts"
   homepage "https://github.com/Two-Weeks-Team/memex"
@@ -14,7 +13,7 @@ cask "memex" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Memex.app"
 
